@@ -5,10 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.koniukhov.movieselection.databinding.FragmentHomeBinding
+import com.koniukhov.movieselection.databinding.FragmentHistoryBinding
 
-class HomeFragment : Fragment() {
-    private var _binding: FragmentHomeBinding? = null
+class HistoryFragment : Fragment() {
+    private var _binding: FragmentHistoryBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -16,8 +16,13 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
 
         return binding.root
+    }
+
+    override fun onDestroy() {
+        _binding = null
+        super.onDestroy()
     }
 }
