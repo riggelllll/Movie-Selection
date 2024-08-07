@@ -1,0 +1,1 @@
+Welcome to Movie Selection, a meticulously crafted portfolio application designed for movie enthusiasts and developers alike. This app serves as a testament to the integration of modern design principles and advanced functionality, offering users a seamless experience in discovering, exploring, and selecting films.
